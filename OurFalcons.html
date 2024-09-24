@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Our Falcons</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='masterstyles.css' type='text/css'>
+ 
+  </head>
+  <body>
+    <div class="bodyDiv">
+      <header>
+        <form id="search">
+          <input tabindex="1" id="searchBox" type="text" placeholder="Search">
+        </form>
+        <div id="searchDiv">
+          <div id="title">
+            <h1 tabindex="-1"><a href="index.html">Kastrel Falconry</a></h1>
+          </div>
+          <div id="subTitles">
+            <span class="navi" tabindex="2"><a href="index.html">Home</a></span>
+            <span class="navi" tabindex="3"><a href="AdoptAFalcon.html">Adopt a Falcon</a></span>
+            <span class="navi" tabindex="4"><a href="Gallery.html">Gallery</a></span>
+            <span class="navi" tabindex="5"><a href="About.html">About Us</a></span>
+          </div>
+        </div>
+      </header>
+        <div class="pageTitle">
+          <h2 style="font-family: Garamond;">Our Falcons</h2>
+        </div>
+        <div id="falconsBody">
+          <div class="falconText">
+            <!--
+            Photgrapher: manfredrichter
+            Date: Aug. 14, 2020
+            Availability: https://pixabay.com/photos/kestrel-falcon-falconry-5468515/
+            -->
+            <img class="falconImg floatLeft" src="Images/Kes.jpg" alt="Image of Kes, the Kestrel Falcon">
+            <p class="falconBios">
+              This is Kes, he is a common Kestrel.
+              Kes is one of our most popular falcons in the falconry!
+              Kestrel Falcons are also OUR favourite birds in the falconry and the origin of our name.
+              Kestrel Falcons are very unique falcons in that they can hover in one place.
+              Come visit Kes on a tour of Kastrel Falconry.
+            </p>
+          </div>
+          <div class="falconText">
+            <!--
+            Photgrapher: ambquinn
+            Date: Nov. 19, 2022
+            Availability: https://pixabay.com/photos/peale-s-falcon-peregrine-falcon-7602108/
+            -->
+            <img class="falconImg floatRight" src="Images/Peales.jpg" alt="Image of Peales, the Peregrine Falcon">
+            <p class="falconBios">
+              This is Peales, our native Peregrine Falcon.
+              Peregrine Falcons are the fastest birds in the world with a maximum speed of 390km/hr when diving.
+              Peales is definetily the fastest falcon in our falconry.
+              She is also the oldest falcon in the falconry.
+              If you want to see Peales ZOOM around the park, come visit on a Falcon Walk.
+            </p>
+          </div>
+          <div class="falconText">
+            <!--
+            Photgrapher: WFranz
+            Date: June 29, 2020
+            Availability: https://pixabay.com/photos/falcon-young-hawk-birds-of-prey-5350832/
+            -->
+            <img class="falconImg floatLeft" src="Images/Earl.jpg" alt="Image of Earl, the Merlin Falcon">
+            <p class="falconBios">
+              This is Earl, the Merlin Falcon.
+              Earl is the youngest bird at our falconry!
+              The Merlin Falcon is a small species of bird and is colloquially known as a pigeon hawk.
+              Earl currently isn't old enough to hunt, but is able to perch on the arm and can be pet and fed.
+              Come visit us today to take care of Earl!
+            </p>
+          </div>
+          <div class="falconText">
+            <!--
+            Photgrapher: Ralphs_Fotos
+            Date: March 14, 2019
+            Availability: https://pixabay.com/photos/falcon-birds-of-prey-raptor-4052676/
+            -->
+            <img class="falconImg floatRight" src="Images/Gyro.jpg" alt="Image of Gyro, the Gyrfalcon">
+            <p class="falconBios">
+              This is Gyro, the Gyrfalcon.
+              Gyrfalcons are the largest faclon species.
+              The gyrfalcon is a very polymorphic species, so its plumage varies greatly.
+              Our Gyro has beautiful white feathers that are really soft to the touch.
+              Come down to the falconry today to see Gyro in action and stroke his beautiful, soft plumage.
+            </p>
+          </div>
+          <div class="ourFalconsLink">
+            <a href="AdoptAFalcon.html"><h2 class="adoptButton"><span style="text-decoration: underline; font-size: 2rem;">Adopt</span><br>a Falcon<br>today!</h2></a>
+          </div>
+        </div>
+        <fieldset id="tourForm">
+          <h2 id="formTitle">Go on a Tour!</h2>
+          <form action="mailto:jazzjunior1@gmail.com" method="post" enctype="text/plain">
+            <p>Name</p>
+              <input class="inputBox" id="foreName" type="text" name="ForeName" placeholder="Forename" tabindex="6">
+              <input class="inputBox" id="surName" type="text" name="SurName" placeholder="Surname" tabindex="7">
+            <p>Email Address</p>
+              <input style="margin-bottom: 10px;" class="inputBox" type="text" name="Email" tabindex="8">
+            <p style="margin: -20px 10px 30px;">
+              Do you want to recive promotional emails?
+              <input type="checkbox" name="promotional" tabindex="9">
+            </p>
+            <p>Phone Number</p>
+              <input class="inputBox" type="text" tabindex="10">
+            <p>Please select a gender</p>
+              <select name="gender" id="genderSelect" tabindex="11">
+                <option value="" disabled selected hidden>Please Choose</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Non-Binary">Non Binary</option>
+                <option value="Other">Other</option>
+              </select>
+            <p>Please select a tour type</p>
+              <div id="radio">
+                <ul>
+                  <li>
+                    <input value="individual" name="tourType" type="radio" tabindex="12">
+                    <label class="radioLabel">Individual</label>
+                    <ul>
+                      <li class="liIndent">- &euro;50</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input value="group" name="tourType" type="radio">
+                    <label class="radioLabel">Group</label>
+                    <ul>
+                      <li class="liIndent">- &euro;30per person</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <input value="family" name="tourType" type="radio">
+                    <label class="radioLabel">Family</label>
+                    <ul>
+                      <li class="liIndent" style="margin-bottom: 0px;">- &euro;20 per adult</li>
+                      <li class="liIndent">- &euro;20 per child under 12</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            <p>Message</p>
+              <textarea id="messageBox" name="comments" rows="5" cols="60" placeholder="Optional" tabindex="13"></textarea>
+              <input class="formButton" name="Submit" type="submit" tabindex="14">
+              <input class="formButton floatRight" name="Reset" type="reset" tabindex="15">
+          </form>
+        </fieldset>
+        <div class="bottomDiv">
+          <a class="toTop" href="#top" tabindex="16">Back to top</a>
+        </div>
+        <footer>
+          <p class="emailFooter">Email us for enquiries. <a href="mailto:james.smith@student.ittralee.ie">James Smith</a></p>
+          <p class="footer">Copyright &copy; 2022 Kastrel Falconry. All Rights Reserved</p>
+        </footer>
+      </div>
+  </body>
+</html>

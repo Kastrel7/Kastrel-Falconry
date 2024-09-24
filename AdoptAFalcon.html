@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Adopt a Falcon</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='masterstyles.css' type='text/css'>
+ 
+  </head>
+  <body>
+    <div class="bodyDiv">
+        <header>
+          <form id="search">
+            <input tabindex="1" id="searchBox" type="text" placeholder="Search">
+          </form>
+          <div id="searchDiv">
+            <div id="title">
+              <h1 tabindex="-1"><a href="index.html">Kastrel Falconry</a></h1>
+            </div>
+            <div id="subTitles">
+              <span class="navi" tabindex="2"><a href="index.html">Home</a></span>
+              <span class="navi" tabindex="3"><a href="OurFalcons.html">Our Falcons</a></span>
+              <span class="navi" tabindex="4"><a href="Gallery.html">Gallery</a></span>
+              <span class="navi" tabindex="5"><a href="About.html">About Us</a></span>
+            </div>
+          </div>
+        </header>
+        <div>
+          <h2 class="pageTitle">Adopt one of our Falcons!</h2>
+          <h3 class="headerThree">Adopting one of our falcons is a monthly subscribtion from as little as €1 a month. This goes towards the food and care of this falcon to keep them healthy and happy. Please consider adopting a falcon today!</h3>
+          <h3 class="headerThree" id="adoptNote">Note: When you adopt a falcon, you do not own the falcon!</h3>
+        </div>
+        <div id="adoptBody">
+          <div class="adoptFalcon">
+            <div class="imageAndName">
+              <img src="Images/Kes.jpg" class="adoptImg" alt="Image of Kes, the Kestrel Falcon">
+              <h2 class="adoptName">Kes</h2>
+            </div>
+            <div class="bothButtons">
+              <div class="ourFalconsLink"><a href=""><h2 class="oneButton">Adopt Kes</h2></a></div>
+              <div class="ourFalconsLink"><a href="OurFalcons.html"><h2 class="oneButton">Learn more about Kes</h2></a></div>
+            </div>
+          </div>
+          <div class="adoptFalcon">
+            <div class="imageAndName">
+              <img src="Images/Earl.jpg" class="adoptImg" alt="Image of Earl, the Merlin Falcon">
+              <h2 class="adoptName">Earl</h2>
+            </div>
+            <div class="bothButtons">
+              <div class="ourFalconsLink"><a href=""><h2 class="oneButton">Adopt Earl</h2></a></div>
+              <div class="ourFalconsLink"><a href="OurFalcons.html"><h2 class="oneButton">Learn more about Earl</h2></a></div>
+            </div>
+          </div>
+          <div class="adoptFalcon">
+            <div class="imageAndName">
+              <img src="Images/Peales.jpg" class="adoptImg" alt="Image of Peales, the Peregrine Falcon">
+              <h2 class="adoptName">Peales</h2>
+            </div>
+            <div class="bothButtons">
+              <div class="ourFalconsLink"><a href=""><h2 class="oneButton">Adopt Peales</h2></a></div>
+              <div class="ourFalconsLink"><a href="OurFalcons.html"><h2 class="oneButton">Learn more about Peales</h2></a></div>
+            </div>
+          </div>
+          <div class="adoptFalcon">
+            <div class="imageAndName">
+              <img src="Images/Gyro.jpg" class="adoptImg" alt="Image of Gyro, the Gyrfalcon">
+              <h2 class="adoptName">Gyro</h2>
+            </div>
+            <div class="bothButtons">
+              <div class="ourFalconsLink"><a href=""><h2 class="oneButton">Adopt Gyro</h2></a></div>
+              <div class="ourFalconsLink"><a href="OurFalcons.html"><h2 class="oneButton">Learn more about Gyro</h2></a></div>
+            </div>
+          </div>
+        </div>
+        <fieldset id="tourForm">
+            <h2 id="formTitle">Go on a Tour!</h2>
+            <form action="mailto:jazzjunior1@gmail.com" method="post" enctype="text/plain">
+              <p>Name</p>
+                <input class="inputBox" id="foreName" type="text" name="ForeName" placeholder="Forename" tabindex="6">
+                <input class="inputBox" id="surName" type="text" name="SurName" placeholder="Surname" tabindex="7">
+              <p>Email Address</p>
+                <input class="inputBox" type="text" name="Email" tabindex="8">
+              <p style="margin: -20px 10px 30px;">
+                Do you want to recive promotional emails?
+                <input type="checkbox" name="promotional" tabindex="9">
+              </p>
+              <p>Phone Number</p>
+                <input class="inputBox" type="text" tabindex="10">
+              <p>Please select a gender</p>
+                <select name="gender" id="genderSelect" tabindex="11">
+                  <option value="" disabled selected hidden>Please Choose</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Non-Binary">Non Binary</option>
+                  <option value="Other">Other</option>
+                </select>
+              <p>Please select a tour type</p>
+                <div id="radio">
+                  <ul>
+                    <li>
+                      <input value="individual" name="tourType" type="radio" tabindex="12">
+                      <label class="radioLabel">Individual</label>
+                      <ul>
+                        <li class="liIndent">- &euro;50</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <input value="group" name="tourType" type="radio">
+                      <label class="radioLabel">Group</label>
+                      <ul>
+                        <li class="liIndent">- &euro;30per person</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <input value="family" name="tourType" type="radio">
+                      <label class="radioLabel">Family</label>
+                      <ul>
+                        <li class="liIndent" style="margin-bottom: 0px;">- &euro;20 per adult</li>
+                        <li class="liIndent">- &euro;20 per child under 12</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              <p>Message</p>
+                <textarea id="messageBox" name="comments" rows="5" cols="60" placeholder="Optional" tabindex="13"></textarea>
+                <input class="formButton" name="Submit" type="submit" tabindex="14">
+                <input class="formButton floatRight" name="Reset" type="reset" tabindex="15">
+            </form>
+          </fieldset>
+        <div class="bottomDiv">
+            <a class="toTop" href="#top" tabindex="16">Back to top</a>
+        </div>
+        <footer>
+          <p class="emailFooter">Email us for enquiries. <a href="mailto:james.smith@student.ittralee.ie">James Smith</a></p>
+          <p class="footer">Copyright &copy; 2022 Kastrel Falconry. All Rights Reserved</p>
+        </footer>
+    </div>
+  </body>
+</html>

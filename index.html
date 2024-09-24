@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Kastrel Falconry</title>
+    <meta charset='utf-8'>
+    <meta name="description" content="Kastrel Falconry Home Page">
+    <meta name="copyright" content="Copyright © 2022 Kastrel Falconry. All Rights Reserved">
+    <meta name="author" content="James Smith">
+    <link rel='stylesheet' href='masterstyles.css' type='text/css'>
+  </head>
+  <body>
+    <div class="bodyDiv">
+      <header>
+        <form id="search">
+          <input tabindex="1" id="searchBox" type="text" placeholder="Search">
+        </form>
+        <div id="searchDiv">
+          <div id="title">
+            <h1 tabindex="-1"><a href="index.html">Kastrel Falconry</a></h1>
+          </div>
+          <div id="subTitles">
+            <span class="navi" tabindex="2"><a href="OurFalcons.html">Our Falcons</a></span>
+            <span class="navi" tabindex="3"><a href="AdoptAFalcon.html">Adopt a Falcon</a></span>
+            <span class="navi" tabindex="4"><a href="Gallery.html">Gallery</a></span>
+            <span class="navi" tabindex="5"><a href="About.html">About Us</a></span>
+          </div>
+        </div>
+      </header>
+      <!--
+      Photgrapher: TheOtherKev
+      Date: Feb. 18, 2020
+      Url: https://pixabay.com/photos/kestrel-hunting-flying-raptor-4857406/
+      -->
+      <img class="mainImg" src="Images/Kestrel-Flying.jpg" alt="Image of a Kestrel Falcon">
+      <div class="mainText">
+        <!--
+        Photgrapher: Beto_MdP
+        Date: Sept. 16, 2022
+        Availability: https://pixabay.com/photos/hawk-red-falcon-birds-raptors-7455627/
+        -->
+        <img class="bodyImg floatLeft" src="Images/Perched.jpg" alt="Image of a perched falcon">
+        <!--
+        Title: Falconry Kerry
+        Author: Faclonry Kerry
+        Date: 2022
+        Date Accessed: November 28, 2022
+        Availability: https://www.falconrykerry.com
+        -->
+        <p class="textPadding">
+          Come visit us for an exclusive falconry experience here in Killarney. 
+          Why not seize your opportunity to take part in “the sport of kings”. 
+          This experience will open a whole new world into an ancient art, thought to be over 4000 years old.
+        </p>
+        <p class="textPadding">
+          Kastrel Falconry is located in Killarney, Co. Kerry. Based less than 2 miles from Killarney town centre. 
+          At Kastrel Falconry, we keep several species of falcons of prey including kestrels, peregrines and gyrfalcons.
+          All of these birds are captive reared and can only be owned by a licensed falconer.
+        </p>
+        <!--
+        Photgrapher: Falconry Kerry
+        Date: 2022
+        Availability: https://www.falconrykerry.com/gallery/0q0149k8gbtuactovzycrpwkewhs6v
+        -->
+        <img class="bodyImg floatRight" src="Images/Falcon.jpg" alt="Image of a Falcon">
+        <p class="textPadding">
+          Traditionally, Falconry was practiced solely for hunting to catch food. 
+          While our falcons do hunt, a falcon walk or falconry experience is more about experiencing the indescribable, while interacting with these majestic birds.
+        </p>
+        <p class="textPadding">
+          At Kastrel Falconry, you will be entertained and hopefully also educated about falcons all over the world, their importance in the ecosystem here in Killarney, and also throughout history, hunting together with humans. 
+          Call us or send an email to arrange an appointment, where you get a personal encounter with some of our falcons. 
+          We fly our falcons on a working, traditional Irish farm.
+        </p>
+        <p class="textPadding">
+          Our Premises is not open to the public, private hawk walks/displays are arranged by contacting us to make an appointment.
+        </p>
+      </div>
+      <fieldset id="tourForm">
+        <h2 id="formTitle">Go on a Tour!</h2>
+        <form action="mailto:jazzjunior1@gmail.com" method="post" enctype="text/plain">
+          <p>Name</p>
+            <input class="inputBox" id="foreName" type="text" name="ForeName" placeholder="Forename" tabindex="6">
+            <input class="inputBox" id="surName" type="text" name="SurName" placeholder="Surname" tabindex="7">
+          <p>Email Address</p>
+            <input class="inputBox" type="text" name="Email" tabindex="8">
+          <p style="margin: -20px 10px 30px;">
+            Do you want to recive promotional emails?
+            <input type="checkbox" name="promotional" tabindex="9">
+          </p>
+          <p>Phone Number</p>
+            <input class="inputBox" type="text" tabindex="10">
+          <p>Please select a gender</p>
+            <select name="gender" id="genderSelect" tabindex="11">
+              <option value="" disabled selected hidden>Please Choose</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Non-Binary">Non Binary</option>
+              <option value="Other">Other</option>
+            </select>
+          <p>Please select a tour type</p>
+            <div id="radio">
+              <ul>
+                <li>
+                  <input value="individual" name="tourType" type="radio" tabindex="12">
+                  <label class="radioLabel">Individual</label>
+                  <ul>
+                    <li class="liIndent">- &euro;50</li>
+                  </ul>
+                </li>
+                <li>
+                  <input value="group" name="tourType" type="radio">
+                  <label class="radioLabel">Group</label>
+                  <ul>
+                    <li class="liIndent">- &euro;30per person</li>
+                  </ul>
+                </li>
+                <li>
+                  <input value="family" name="tourType" type="radio">
+                  <label class="radioLabel">Family</label>
+                  <ul>
+                    <li class="liIndent" style="margin-bottom: 0px;">- &euro;20 per adult</li>
+                    <li class="liIndent">- &euro;20 per child under 12</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          <p>Message</p>
+            <textarea id="messageBox" name="comments" rows="5" cols="60" placeholder="Optional" tabindex="13"></textarea>
+            <input class="formButton" name="Submit" type="submit" tabindex="14">
+            <input class="formButton floatRight" name="Reset" type="reset" tabindex="15">
+        </form>
+      </fieldset>
+      <div class="bottomDiv">
+        <a class="toTop" href="#top" tabindex="16">Back to top</a>
+      </div>
+      <footer>
+        <p class="emailFooter">Email us for enquiries. <a href="mailto:james.smith@student.ittralee.ie">James Smith</a></p>
+        <p class="footer">Copyright &copy; 2022 Kastrel Falconry. All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>

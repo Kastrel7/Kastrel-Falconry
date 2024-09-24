@@ -1,0 +1,572 @@
+/*******************************/
+/********** Universal **********/
+/*******************************/
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/**********
+Author: Stephanie Eckles
+Title: Pure CSS Smooth-Scroll "Back to Top"
+Date: Apr 16, 2020
+Url: https://moderncss.dev/pure-css-smooth-scroll-back-to-top/
+**********/
+html{
+    scroll-behavior: smooth;
+    min-width: 490px;
+}
+/**********/
+
+/**********
+Author: W3Schools
+Title: How TO - Custom Scrollbar
+Date: 2022
+Url: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+**********/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0,0,0,0);
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 6px;
+}
+/**********/
+.bodyDiv{
+    background-color: #836853;
+    background-image: url("images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+}
+.floatLeft{
+    float: left;
+}
+.floatRight{
+    float: right;
+}
+.pageTitle{
+    color: #fff;
+    text-align: center;
+    margin: 25px 0px 45px;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+.headerThree{
+    color: #fff;
+    width: 50%;
+    margin: -25px auto 0px;
+    text-align: justify;
+    line-height: 30px;
+}
+.mainText{
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    margin-top: 45px;
+    font-size: 1.5625rem;
+    border-bottom: #000 solid 2px;
+    padding: 0px 4vw 0px;
+    text-align: justify;
+}
+.bottomDiv{
+    text-align: right;
+}
+.toTop{
+    text-align: center;
+    padding: 5px 5px 5px;
+    border-radius: 20px;
+    border: #000 solid 2px;
+    margin: 20px 25px 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+}
+/*******************************/
+
+
+/**************************************************/
+/********** Header and Navigations Links **********/
+/**************************************************/
+header{
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border: rgba(0,0,0,0.5) solid 1px;
+    border-top: 0px;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.75);
+}
+#searchDiv{
+    /**********
+    Author: Gator
+    Title: Set height of <div> = to height of another <div> through .css
+    Date: Oct 21, 2013
+    Url: https://stackoverflow.com/questions/19484544/set-height-of-div-to-height-of-another-div-through-css
+    **********/
+    min-height: 85px;
+    /**********/
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+#searchBox{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+#search{
+    text-align: right;
+}
+#title{
+    margin-top: 12.5px;
+    margin-left: 20px;
+    float: left;
+    width: 25%;
+    text-transform: uppercase;
+}
+/**********
+Author: W3Schools
+Title: CSS Links
+Date: 2022
+Url: https://www.w3schools.com/css/css_link.asp
+**********/
+h1 a:link, h1 a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+.navi a:hover{
+    /**********
+    Author: W3Schools
+    Title: CSS Shadow Effects
+    Date: 2022
+    Url: https://www.w3schools.com/css/css3_shadows.asp
+    **********/
+    text-shadow: 1px 1px 5px;
+    /**********/
+}
+.navi a:link, .navi a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+/**********/
+
+#subTitles{
+    float: right;
+    margin-top: 10px;
+    width: 65%;
+    font-size: 1.5625rem;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin-right: 10px;
+}
+.navi{
+    margin-right: 20px;
+    padding-top: 6px;
+    display: inline-block;
+    /**********
+    Author: W3Schools
+    Title: CSS Shadow Effects
+    Date: 2022
+    Url: https://www.w3schools.com/css/css3_shadows.asp
+    **********/
+    transition: all 200ms ease-out; 
+    /**********/
+}
+/**************************************************/
+
+
+/**************************************/
+/********** Front Page Body ***********/
+/**************************************/
+.mainImg{
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    border-radius: 35px;
+    margin-top: 30px;
+    /**********
+    Author: W3Schools
+    Title: CSS Shadow Effects
+    Date: 2022
+    Url: https://www.w3schools.com/css/css3_shadows.asp
+    **********/
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    border: rgba(0,0,0,0.5) solid 1px;
+    /**********/
+}
+p.textPadding{
+    padding: 0px 0px 25px;
+    font-family: Garamond;
+    font-weight: 1000;
+}
+.bodyImg{
+    width: 250px;
+    border-radius: 35px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border: rgba(0,0,0,0.5) solid 1px;
+    margin: 0px 25px 25px;
+}
+/**************************************/
+
+
+/***********************************/
+/********** Fill Out Form **********/
+/***********************************/
+#tourForm{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    margin-top: 40px;
+    border: 1px solid #000;
+    border-radius: 35px;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+}
+#formTitle{
+    text-align: center;
+    font-size: 1.875rem;
+    padding-bottom: 20px;
+}
+.formSubTitles{
+    margin-bottom: 10px;
+}
+#foreName{
+    width: 48%;
+    float: left;
+}
+#surName{
+    width: 48%;
+    float: right;
+}
+.inputBox{
+    width: 98.8%;
+    border-radius: 10px;
+    border: #000 1px solid;
+    height: 35px;
+    padding-left: 5px;
+    margin-bottom: 30px;
+    font-size: 0.9375rem;
+    background-color: #fff;
+}
+#promotional{
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+#genderSelect{
+    margin-bottom: 30px;
+    height: 35px;
+    border-radius: 10px;
+}
+#radio{
+    text-indent: 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.radioLabel{
+    margin-left: 20px;
+}
+.liIndent{
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+li{
+    list-style-type: none;
+}
+#messageBox{
+    width: 98.8%;
+    border-radius: 10px;
+    border: #000 1px solid;
+    padding-left: 5px;
+    margin-bottom: 30px;
+    font-size: 0.9375rem;
+}
+.formButton{
+    margin: auto;
+    display: flex;
+    width: 75px;
+    height: 35px;
+    border-radius: 20px;
+    justify-content: center;
+    cursor: pointer;
+}
+.inputBox:focus, #messageBox:focus{
+    background-color: #bbb;
+}
+/***********************************/
+
+
+/*********************************/
+/********** Our Falcons **********/
+/*********************************/
+#falconsBody{
+    margin: 0px 0px 100px;
+}
+.falconText{
+    color: #fff;
+    width: 90%;
+    min-height: 200px;
+    max-height: 100%;
+    margin: auto;
+    margin-top: 45px;
+    font-size: 1.5625rem;
+    border-bottom: #000 solid 2px;
+    padding: 0px 4vw 45px;
+    text-align: justify;
+}
+.falconBios{
+    font-size: 1.875rem;
+    font-family: garamond;
+    font-weight: 1000;
+    padding-top: 25px;
+}
+.falconImg{
+    width: 200px;
+    border-radius: 35px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    border: rgba(0,0,0,0.5) solid 1px;
+    margin: 25px 25px 25px;
+}
+.adoptButton{
+    width: fit-content;
+    margin: 30px auto -60px;
+    border: #000 2px solid;
+    background-color: #000;
+    text-align: center;
+    padding: 5px 75px 10px;
+    border-radius: 30px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+.adoptButton:hover{
+    background-color: #bbb;
+}
+/**********************************/
+
+/***************************/
+/********** About **********/
+/***************************/
+.aboutText{
+    color: #fff;
+    width: 70%;
+    margin: auto;
+    margin-top: 45px;
+    font-size: 1.875rem;
+    line-height: 45px;
+    border-bottom: #000 solid 2px;
+    padding: 0px 14vw 45px;
+    text-align: justify;
+    font-weight: bold;
+}
+#simLinkDiv{
+    width: 70%;
+    margin: auto;
+    border-bottom: #000 solid 2px;
+    padding: 0px 14vw 20px
+}
+#simLinkTitle{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin: 10px 0px 10px;
+    font-family: Garamond;
+    text-decoration: underline;
+}
+.simLink{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.simLink a:link, .simLink a:visited{
+    color: #fff;
+    text-decoration: none;
+    font-family: Garamond;
+}
+.simLink a:hover{
+    text-shadow: 1px 1px 5px;
+}
+td, th{
+    border: 1px solid #fff;
+    padding: 5px;
+}
+table{
+    border-collapse: collapse;
+    width: fit-content;
+    text-align: center;
+    color: #fff;
+    margin: 0px auto 20px;
+    font-size: 1.5rem;
+}
+#openingTimes{
+    width: 70%;
+    margin: auto;
+    border-bottom: #000 solid 2px;
+    padding: 20px 14vw 20px
+}
+#timesTitle{
+    color: #fff;
+    text-align: center;
+    margin: 0px 0px 20px;
+    font-size: 2.5rem;
+    font-family: Garamond;
+    text-decoration: underline;
+}
+/***************************/
+
+/*****************************/
+/********** Gallery **********/
+/*****************************/
+/**********
+Author: W£Schools
+Title: How TO - Slideshow
+Date: 2022
+Availability: https://www.w3schools.com/howto/howto_js_slideshow.asp
+**********/
+.slideshowContainer{
+  max-width: 75vw;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+.mySlides{
+    display: none;
+}
+.galleryImg{
+    height: 45vw;
+    width: 100%;
+    border-radius: 35px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border: rgba(0,0,0,0.5) solid 1px;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: 0.6s ease;
+    border-radius: 0 20px 20px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.dot{
+    height: 1vw;
+    width: 1vw;
+    margin: 0 0.135vw;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+.active{
+    background-color: #555555;
+}
+/*****************************/
+
+/************************************/
+/********** Adopt A Falcon **********/
+/************************************/
+#adoptNote{
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    font-size: .9rem;
+    font-weight: 100;
+}
+#adoptBody{
+    width: fit-content;
+    margin: 40px auto 40px;
+    text-align: center;
+    color: #fff;
+}
+.adoptFalcon{
+    margin-bottom: 30px;
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+}
+.imageAndName{
+    width: fit-content;
+    display: inline-block;
+}
+.adoptImg{
+    max-width: 250px;
+    border-radius: 35px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border: rgba(0,0,0,0.5) solid 1px;
+    margin: 0px 25px 0px;
+}
+.adoptName{
+    width: fit-content;
+    margin: auto;
+}
+.bothButtons{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    vertical-align: top;
+}
+.oneButton{
+    border: #000 2px solid;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: #000;
+    margin-top: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.oneButton:hover{
+    background-color: #bbb;
+}
+.ourFalconsLink a:link, .ourFalconsLink Sa:visited{
+    color: #000;
+    text-decoration: none;
+}
+/************************************/
+
+/****************************/
+/********** Footer **********/
+/****************************/
+.footer{
+    font-size: 0.5rem;
+    text-align: center;
+    color: #bbb;
+}
+.emailFooter{
+    font-size: 0.8rem;
+    text-align: center;
+    color: #bbb;
+}
+.emailFooter a:link{
+    color: #bbb;
+}
+.emailFooter a:hover{
+    text-shadow: 1px 1px 5px;
+}
+/****************************/
